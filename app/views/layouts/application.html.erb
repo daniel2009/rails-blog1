@@ -14,7 +14,7 @@
 	<div id="sidebar">
 		<div id="logo">
 			<%= link_to root_path do %>
-				<img src="assets/Rafael-Nadal-logo.png" height="50" width="50" >
+				<img src="/assets/Rafael-Nadal-logo.png" height="50" width="50" ></img>
 			<% end %>
 		</div>
 
@@ -43,11 +43,14 @@
 		<div class="home_button">
 			<button class="button"><%= link_to "Home", root_path %></button>
 		</div>
+		
+		<div class="music_control">
 			<% if user_signed_in? %>
-				<audio src="renjian.mp3"  type="audio/mp3" controls preload="auto" volume="0.75">
+				<audio src="/renjian.mp3"  type="audio/mp3" controls preload="auto" volume="0.75">
 					Your browser does not support HTML audio tag!
 				</audio>
 			<% end %>
+		</div>
 			
 		<div class="buttons">
 			<% if user_signed_in? %>
