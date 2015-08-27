@@ -20,6 +20,7 @@
 $green: #33CD99;
 $dark_gray: #2B2E2E;
 $light_gray: #C0C1C1;
+$red: #EC0851;
 
 html, body {
 	font-family: 'Raleway', sans-serif;
@@ -164,7 +165,7 @@ a {
 #main_content {
 	padding-top: 4em;
 	margin-left: 150px;
-	background: white;
+	background: $light_gray;
 	.alert {
 		margin-left: 3em;
 	}
@@ -189,11 +190,14 @@ a {
 		}
 	}
 	#post_content {
-		margin-top: -1em;
+		margin-top: 0em;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
 		padding: 1em 3em;
-		border-bottom: 1px solid $dark_gray;
+		border-bottom: 1px solid $light_gray;
 		padding-bottom: 2em;
 		background-color: white;
+		border-radius: 0.5em;
 		.title {
 			font-weight: 500;
 			text-decoration: none;
@@ -210,18 +214,44 @@ a {
 			color: #9eafba;
 			margin: .5em 0 2em 0;
 		}
-		a {
-			border: 1px solid $dark_gray;
-			padding: .5em 1.5em;
-			font-size: 0.8em;
-			border-radius: 1.5em;
+		.buttons {
+			float: left;
+			margin-top: -1.5em;
+			color: white;
+			font-size: 1em;
+			font-weight: 800;
+			.editpost_button {
+				background: $green;
+				border: 1px solid $light_gray;
+				padding: .5em 1.5em;
+				border-radius: 1.5em;
+				&:hover {
+					color: $dark_gray;
+					border: 1px solid $dark_gray;	
+				};
+			}
+			.deletepost_button {
+				background: $red;
+				border: 1px solid $light_gray;
+				padding: .5em 1.5em;	
+				border-radius: 1.5em;
+				
+					&:hover {
+						color: $dark_gray;
+						border: 1px solid $dark_gray;
+					};
+			}
 		}
+		
 	}
 	#comments {
-		padding-left: 3em;
-		padding-right: 3em;
+    padding-left: 3em;
+    padding-right: 3em;
 		background-color: white;
-		border-top: 1px solid $dark_gray;
+		border-top: 1px solid $light_gray;
+		border-radius: 0.5em;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
 		h2 {
 			margin: 1.5em 0 1em 0;
 			border-bottom: 1px solid $dark_gray;
@@ -330,7 +360,7 @@ a {
 			outline: none;
 			background: transparent;
 			border: 1px solid $dark_gray;
-			padding: .5em 1.5em;
+			padding: .3em 1.5em;
 			font-size: 1.1em;
 			border-radius: 1.5em;
 			margin-left: .5em;
