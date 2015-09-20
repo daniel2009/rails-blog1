@@ -163,15 +163,20 @@ a {
 	}
 }
 #main_content {
-	padding-top: 4em;
+	padding-top: 5em;
 	margin-left: 150px;
-	background: $light_gray;
+	background: white;
 	.alert {
 		margin-left: 3em;
 	}
 	.post_wrapper {
-		padding: 3em;
-		border-bottom: 2px solid $light_gray;
+		padding: 1em;
+		border: 2px solid $light_gray;
+		border-radius : 0.5em;
+		margin-bottom: 20px;
+		margin-left: 20px;
+		margin-right: 20px;
+		background: #D3D8D8;
 		.title {
 			margin: 0;
 			a {
